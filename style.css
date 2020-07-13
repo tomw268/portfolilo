@@ -1,0 +1,242 @@
+/* Setup Code */
+
+/*
+--font code--
+*/
+
+:root {
+    --bluegray: #586a7b ;
+    --teal: #1a9f7f;
+    --lime: #96b462;
+    --gold: #e99926;
+    --brick: #ae3b2a;
+    --stone: #e2e7ea;
+
+    /* --titleFont: ;
+    --textFont: ; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid gold; */
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: var(--titleFont);
+} */
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--stone);
+}
+
+/* Project Specific Styles */
+a {
+    color: var(--brick);
+    text-decoration: none;
+}
+
+.header {
+    width: 400px;
+    background-image: url('img/profileImage-1125x720.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding: 10px 0px 75px 0px;
+}
+
+#logo {
+    width: 100px;
+}
+
+.intro {
+    padding: 20px;
+}
+
+h1 {
+    color: var(--teal);
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--bluegray);
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    background: url('img/escheresque.jpeg');
+    color: var(--stone);
+    border: var(--bluegray);
+    margin-top: 20px;
+    padding: 5px;
+}
+
+h2 {
+    color: var(--brick);
+    margin-bottom: 10px;
+}
+
+.projects {
+    padding: 20px;
+}
+
+.plink {
+    color: var(--brick);
+    text-decoration: underline;
+}
+
+.container {
+    height: 400px;
+    background-image: url('img/escheresque.jpeg');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 150px;
+    width: 170px;
+    background-color: var(--stone);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.links {
+    height: 170px;
+    padding: 20px;
+    background: url('img/linksimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    width: 40px;
+    stroke: var(--gold);
+    margin: 5px;
+}
+
+.text {
+	position:relative;
+	left:20px;
+	top:30px;
+	height:200px;
+	width:auto;
+	margin-bottom:10px;
+	z-index:-1;
+}
+
+.graphic {
+	position:relative;
+	top:30px;
+	left:0px;
+	width:auto;
+	height:300px;
+	margin-bottom:-50px;
+	z-index:1;	
+}
+
+#download {
+    position: relative;
+    top: 10px;
+    z-index:2;
+}
+
+.biopic {
+    width: 100%;
+    height: 250px;
+    background-image: url('img/biopic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.biography {
+    padding: 20px;
+}
+
+footer {
+    height: 200px;
+    background-image: url('img/footer-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#foot {
+    height: 10%;
+    width: 70%;
+    color: var(--stone);
+    background: url('img/escheresque.jpeg');
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+@media only screen and (min-width: 1080px) {
+    .header {
+        width: 100%;
+        height: 300px;
+        background-image: url('img/profileImage-2200x900.jpeg');
+        padding: 0;   
+    }
+
+    #logo {
+        width: 300px;
+    }
+
+    button {
+        width: 200px;
+    }
+
+    .links {
+        height: 350px;
+    }
+
+    .icons {
+        width: 60px;
+    }
+
+    .resume {
+        text-align: center;
+    }
+
+    .text {
+        height: 400px;
+    }
+
+    .graphic {
+        height: 500px;
+    }
+
+    .biopic {
+        height: 500px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .footer{
+        height: 400px;
+        background-size: cover;
+    }
+
+    #foot {
+        font-size: 18px;
+        padding-top: 10px;
+        width: 60%;
+    }
+}
